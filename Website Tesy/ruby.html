@@ -1,0 +1,140 @@
+<!Doctype HTML>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="CSS/stylesheet.css">
+
+</head>
+
+<html>
+<body>
+
+<!--NAVBAR SHIT DON'T MIND ME!!!-->
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">Home</a>
+  <a href="html.html">HTML</a>
+  <a href="ruby.html">Ruby</a>
+  <a href="donate.html">Donate</a>
+</div>
+
+<div class="navbar-bgcolor">
+    <span style="color:rgb(255, 255, 255);padding:20px;font-size:30px;cursor:pointer;position:absolute;z-index:3" onclick="openNav()">&#9776; Menu</span>
+    </div>
+<script src="JavaScript/navbar.js"></script>
+<div id="overlay"></div>
+<!--END OF NAVBAR SHIT LOL-->
+
+    <div class="header">
+
+
+        <h1>Introduction to Ruby</h1>
+        <p>Scroll down to learn how to make your first Ruby program!</p>
+
+
+</div>
+
+<div class="uwu">
+
+<div class="page-title">
+  <h1>
+    Let's start off with a simple program, shall we?
+  </h1>
+  <hr>
+</div>
+
+<div class="body">
+<p>We'll start off with ruby. Ruby is a coding language which runs inside of terminal. (Command Prompt for Windows users.)</p>
+<br>
+<p>Let's create our first ruby program!</p>
+<p>First, you want to create a new file on your Desktop. Name this file "helloworld.rb"</p>
+<p>Next, you want to right-click the file and select "Open With". Navigate over to "Notes" or any coding software you have installed.</p>
+<p>Type the following code in:</p>
+
+<div class="code-box">
+<code>
+puts "Hello World!"
+</code>
+</div>
+
+<p>
+  Now open Terminal (Or Command Prompt) and type in the following commands:
+  <br>
+</p>
+
+<div class="code-box">
+    <code>
+    cd Desktop
+    <br>
+    ruby helloworld.rb
+    </code>
+    </div>
+ <p>If you were following the steps properly, the terminal would say "Hello World!"
+ </p>   
+ <p><b>Puts</b> is a command used to display text in terminal.</p>
+ <br>
+ <p>Now, let's get to slightly more <b>advanced</b> programming!</p>
+ <p>Make a new line and type the following code in:</p>
+ <div class="code-box">
+    <code>
+    answer = gets.Chomp
+    <br>
+    if answer == 'Hello!' then
+    <br>
+      puts "Hello there!"
+      <br>
+    end
+
+    </code>
+    </div>
+
+<p>
+  Okay, go back to terminal and type 'ruby helloworld.rb'
+</p>
+<p>
+  Now, there won't be any text shown on screen. That's normal. Try typing in the word 'Hello!'
+</p>
+<br>
+<p>
+  See that? The terminal responded!
+</p>
+<p>
+  <b>
+    gets.Chomp
+  </b>
+   is a command which awaits a response from the user.
+</p>
+<p>
+  <b>
+    if answer == 'Hello!'
+  </b>
+    is a command stating if the user said a specifc word. NOTE THAT THIS IS CASE SENSITIVE!
+</p>
+<p>But what if you said bye... The program would exit, right? Well, let's change that. Modify the original code to make it look like this:</p>
+
+<div class="code-box">
+    <code>
+    answer = gets.Chomp
+    <br>
+    if answer == 'Hello!' then
+    <br>
+      puts "Hello there!"
+      <br>
+    elsif answer == 'Bye!' then
+    <br>
+    puts "Leaving so soon?"
+    <br>
+    end
+
+    </code>
+    </div>
+<p>
+  That's really all there is to know about ruby. 
+  Sure, there's a lot more than just if then else, 
+  but this should get you started in making you an 
+  excellent ruby programmer!
+</p>
+</div>
+
+</div>
+</body>
+</html>
