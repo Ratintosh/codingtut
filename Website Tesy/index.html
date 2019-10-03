@@ -35,7 +35,7 @@ div.uwu{
   margin: auto;
   width: 50%;
   padding: 100px;
-  height: 1000px;
+  height: auto;
 
 }
 
@@ -53,6 +53,9 @@ div.code-box{
   background-color: rgb(31, 30, 36);
   text-align:left;
   font-family:monospace;
+  color: white;
+  padding: 15px;
+  border-radius:10px;
 }
 
 </style>
@@ -87,15 +90,80 @@ div.code-box{
 <p>We'll start off with ruby. Ruby is a coding language which runs inside of terminal. (Command Prompt for Windows users.)</p>
 <br>
 <p>Let's create our first ruby program!</p>
-<p>First, you want to create a new file on your computer. Name this "helloworld.rb"</p>
+<p>First, you want to create a new file on your Desktop. Name this file "helloworld.rb"</p>
 <p>Next, you want to right-click the file and select "Open With". Navigate over to "Notes" or any coding software you have installed.</p>
 <p>Type the following code in:</p>
 
 <div class="code-box">
-puts "OwO Whats this?
-"
-
+<code>
+puts "Hello World!"
+</code>
 </div>
+
+<p>
+  Now open Terminal (Or Command Prompt) and type in the following commands:
+  <br>
+</p>
+
+<div class="code-box">
+    <code>
+    cd Desktop
+    <br>
+    ruby helloworld.rb
+    </code>
+    </div>
+ <p>If you were following the steps properly, the terminal would say "Hello World!"
+ </p>   
+ <p><b>Puts</b> is a command used to display text in terminal.</p>
+ <br>
+ <p>Now, let's get to slightly more <b>advanced</b> programming!</p>
+ <p>Make a new line and type the following code in:</p>
+ <div class="code-box">
+    <code>
+    answer = gets.Chomp
+    <br>
+    if answer == 'Hello!' then
+      puts "Hello there!"
+    end
+
+    </code>
+    </div>
+
+<p>
+  Okay, go back to terminal and type 'ruby helloworld.rb'
+</p>
+<p>
+  Now, there won't be any text shown on screen. That's normal. Try typing in the word 'Hello!'
+</p>
+<br>
+<p>
+  See that? The terminal responded!
+</p>
+<p>
+  <b>
+    gets.Chomp
+  </b>
+   is a command which awaits a response from the user.
+</p>
+<p>
+  <b>
+    if answer == 'Hello!'
+  </b>
+    is a command stating if the user said a specifc word. NOTE THAT THIS IS CASE SENSITIVE!
+</p>
+<p>But what if you said bye... The program would exit, right? Well, let's change that. Modify the original code to make it look like this:</p>
+
+<div class="code-box">
+    <code>
+    answer = gets.Chomp
+    <br>
+    if answer == 'Hello!' then
+      puts "Hello there!"
+    elsif answer
+    end
+
+    </code>
+    </div>
 
 </div>
 
